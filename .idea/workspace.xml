@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee8e1c0-9258-4427-9648-7544173e7585" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/P5-Autocomplete.iml" beforeDir="false" afterPath="$PROJECT_DIR$/P5-Autocomplete.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BenchMarkForAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BenchMarkForAutocomplete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinaryBenchmark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinaryBenchmark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/SlowBruteAutocomplete.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term$PrefixOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term$PrefixOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Term.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestTerm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestTerm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteAutocomplete.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

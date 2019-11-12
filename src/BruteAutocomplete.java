@@ -37,8 +37,7 @@ public class BruteAutocomplete implements Autocompletor {
 		}
 		
 		// maintain pq of size k
-		PriorityQueue<Term> pq = 
-				new PriorityQueue<Term>(Comparator.comparing(Term::getWeight));
+		PriorityQueue<Term> pq = new PriorityQueue<Term>(Comparator.comparing(Term::getWeight));
 		for (Term t : myTerms) {
 			if (!t.getWord().startsWith(prefix))
 				continue;
