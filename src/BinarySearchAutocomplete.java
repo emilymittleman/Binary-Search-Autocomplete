@@ -28,8 +28,7 @@ public class BinarySearchAutocomplete implements Autocompletor {
 	 *            weight[i].
 	 * @return a BinarySearchAutocomplete whose myTerms object has myTerms[i] =
 	 *         a Term with word terms[i] and weight weights[i].
-	 * @throws a
-	 *             NullPointerException if either argument passed in is null
+	 * @throws NullPointerException if either argument passed in is null
 	 */
 	public BinarySearchAutocomplete(String[] terms, double[] weights) {
 		if (terms == null || weights == null) {

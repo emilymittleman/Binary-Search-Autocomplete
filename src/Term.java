@@ -30,6 +30,10 @@ public class Term implements Comparable<Term> {
 	 */
 	public Term(String word, double weight) {
 		// TODO: Complete Term constructor, throw exceptions
+		if(weight < 0) { throw new IllegalArgumentException("negative weight " + weight); }
+		if(word == null) { throw new NullPointerException("null word  " + word); }
+		myWord = word;
+		myWeight = weight;
 	}
 	
 	/**
@@ -55,7 +59,7 @@ public class Term implements Comparable<Term> {
 	 */
 	public double getWeight() {
 		// TODO: Change implementation
-		return 0;
+		return myWeight;
 	}
 
 	/**
@@ -101,6 +105,17 @@ public class Term implements Comparable<Term> {
 		 */
 		public int compare(Term v, Term w) {
 			// TODO: Implement compare
+			// find which one is shorter, or if they're the same length word
+			int maxIndexCompare = Math.min(myPrefixSize,
+														Math.min(v.myWord.length(), w.myWord.length()));
+			for(int i=0; i<maxIndexCompare; i++) {
+				if(v.myWord.charAt(i) - w.myWord.charAt(i) > 0) { return 1; }
+				if(v.myWord.charAt(i) - w.myWord.charAt(i) < 0) { return -1; }
+			}
+			if(v.myWord.length() <= myPrefixSize || w.myWord.length() <= myPrefixSize) {
+				if (v.myWord.length() - w.myWord.length() > 0) { return 1; }
+				if (v.myWord.length() - w.myWord.length() < 0) { return -1; }
+			}
 			return 0;
 		}
 	

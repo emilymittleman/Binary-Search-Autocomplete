@@ -16,10 +16,9 @@ public class BinarySearchLibrary {
 	 * @param comp how Items are compared for binary search
 	 * @return smallest index k such that list.get(k).equals(target)
 	 */
-	public static <T>
-	    int firstIndexSlow(List<T> list, 
-	    		           T target, Comparator<T> comp) {
-		int index = Collections.binarySearch(list, target,comp);
+	public static <T> int firstIndexSlow(List<T> list,
+	    		           				T target, Comparator<T> comp) {
+		int index = Collections.binarySearch(list, target, comp);
 		
 		if (index < 0) return index;
 		
@@ -38,15 +37,24 @@ public class BinarySearchLibrary {
 	 * @return smallest index k such that list.get(k).equals(target),
 	 * Return -1 if there is no such object in list.               
 	 */
-	public static <T>
-    	int firstIndex(List<T> list, 
-	               	   T target, Comparator<T> comp) {
-		
+	public static <T> int firstIndex(List<T> list,
+	               	   				T target, Comparator<T> comp) {
+		// loop invariant: (low, high] is an interval containing target, if target is in the list
 		int low = -1;
 		int high = list.size()-1;
-		
-		// (low,high] contains target
-		// TODO: write method
+
+		while(low+1 != high) {
+			int mid = (low + high) / 2;
+			T midValue = list.get(mid);
+			// compared is -1, 0, or 1 depending on if midValue < target, ==, or >
+			int compared = comp.compare(midValue, target);
+
+			// list[mid] < target
+			if(compared < 0) { low = mid; }
+			// list[mid] >= target
+			else { high = mid; }
+		}
+		if(comp.compare(list.get(high), target) == 0) { return high; }
 		
 		return -1;
 	}
@@ -68,12 +76,22 @@ public class BinarySearchLibrary {
 	public static <T>
 	int lastIndex(List<T> list, 
                	  T target, Comparator<T> comp) {
-		
+		// loop invariant: [low, high) is an interval containing target, if target is in the list
 		int low = 0;
 		int high = list.size();
-		
-		// target in [low,high)
-		// TODO: write  method
+
+		while(low+1 != high) {
+			int mid = (low + high) / 2;
+			T midValue = list.get(mid);
+			// compared is -1, 0, or 1 depending on if midValue < target, ==, or >
+			int compared = comp.compare(midValue, target);
+
+			// list[mid] > target
+			if(compared > 0) { high = mid; }
+			// list[mid] <= target
+			else { low = mid; }
+		}
+		if(comp.compare(list.get(low), target) == 0) { return low; }
 		
 		return -1;
 	}
