@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee8e1c0-9258-4427-9648-7544173e7585" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HashListAutocomplete.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AutocompleteMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutocompleteMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchLibrary.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

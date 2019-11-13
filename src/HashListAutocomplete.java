@@ -35,8 +35,8 @@ public class HashListAutocomplete implements Autocompletor {
             //if(term.length() < maxPrefixes) { maxPrefixes = term.length(); }
             int maxPrefixes = Math.min(MAX_PREFIX, term.length());
 
-            for(int j=0; j<maxPrefixes; j++) {
-                String prefix = term.substring(0, j+1);
+            for(int j=0; j<=maxPrefixes; j++) {
+                String prefix = term.substring(0, j);
                 myMap.putIfAbsent(prefix, new ArrayList<Term>());
                 myMap.get(prefix).add(new Term(term, weights[i]));
             }

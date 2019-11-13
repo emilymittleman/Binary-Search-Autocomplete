@@ -96,7 +96,6 @@ public class BinarySearchAutocomplete implements Autocompletor {
 	 *         no such words exist, reutrn an empty array
 	 * @throws NullPointerException if prefix is null
 	 */
-	
 	@Override
 	public List<Term> topMatches(String prefix, int k) {
 		Term dummy = new Term(prefix,0);
@@ -105,7 +104,7 @@ public class BinarySearchAutocomplete implements Autocompletor {
 		int last = lastIndexOf(myTerms, dummy, comp);
 
 		// prefix not found
-		if (first == -1) { return new ArrayList<>(); }
+		if (first == -1 || k == 0) { return new ArrayList<>(); }
 
 		// maintain pq of size k
 		PriorityQueue<Term> pq = new PriorityQueue<Term>(Comparator.comparing(Term::getWeight));
