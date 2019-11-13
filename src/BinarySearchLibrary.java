@@ -40,6 +40,7 @@ public class BinarySearchLibrary {
 	public static <T> int firstIndex(List<T> list,
 	               	   				T target, Comparator<T> comp) {
 		// loop invariant: (low, high] is an interval containing target, if target is in the list
+		if(list.size() == 0) { return -1; }
 		int low = -1;
 		int high = list.size()-1;
 
@@ -77,6 +78,7 @@ public class BinarySearchLibrary {
 	int lastIndex(List<T> list, 
                	  T target, Comparator<T> comp) {
 		// loop invariant: [low, high) is an interval containing target, if target is in the list
+		if(list.size() == 0) { return -1; }
 		int low = 0;
 		int high = list.size();
 
@@ -93,7 +95,7 @@ public class BinarySearchLibrary {
 		}
 		if(comp.compare(list.get(low), target) == 0) { return low; }
 
-		else { return -1; }
+		return -1;
 	}
 	
 }
