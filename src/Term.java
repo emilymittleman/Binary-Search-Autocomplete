@@ -106,17 +106,10 @@ public class Term implements Comparable<Term> {
 		public int compare(Term v, Term w) {
 			// TODO: Implement compare
 			// find which one is shorter, or if they're the same length word
-			int maxIndexCompare = Math.min(myPrefixSize,
-														Math.min(v.myWord.length(), w.myWord.length()));
-			for(int i=0; i<maxIndexCompare; i++) {
-				if(v.myWord.charAt(i) - w.myWord.charAt(i) > 0) { return 1; }
-				if(v.myWord.charAt(i) - w.myWord.charAt(i) < 0) { return -1; }
+			if(v.myWord.length() >= myPrefixSize && w.myWord.length() >= myPrefixSize) {
+				return v.myWord.substring(0, myPrefixSize).compareTo(w.myWord.substring(0, myPrefixSize));
 			}
-			if(v.myWord.length() <= myPrefixSize || w.myWord.length() <= myPrefixSize) {
-				if (v.myWord.length() - w.myWord.length() > 0) { return 1; }
-				if (v.myWord.length() - w.myWord.length() < 0) { return -1; }
-			}
-			return 0;
+			return v.myWord.compareTo(w.myWord);
 		}
 	
 	}

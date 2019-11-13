@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee8e1c0-9258-4427-9648-7544173e7585" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/AutocompleteMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BruteAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BruteAutocomplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term$PrefixOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/Term$PrefixOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AutocompleteMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AutocompleteMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BruteAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteAutocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchLibrary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Term.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,16 +57,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinaryBenchmark">
+  <component name="RunManager" selected="Application.AutocompleteMain">
     <configuration name="AutocompleteMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AutocompleteMain" />
-      <module name="P5-Autocomplete" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BenchMarkForAutocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BenchMarkForAutocomplete" />
       <module name="P5-Autocomplete" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -66,6 +68,15 @@
     <configuration name="BinaryBenchmark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BinaryBenchmark" />
       <module name="P5-Autocomplete" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestBinarySearchAutocomplete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P5-Autocomplete" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBinarySearchAutocomplete" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AutocompleteMain" />
+        <item itemvalue="JUnit.TestBinarySearchAutocomplete" />
         <item itemvalue="Application.BinaryBenchmark" />
         <item itemvalue="JUnit.TestBinarySearchLibrary" />
-        <item itemvalue="Application.AutocompleteMain" />
         <item itemvalue="JUnit.TestTerm" />
-        <item itemvalue="Application.BenchMarkForAutocomplete" />
       </list>
     </recent_temporary>
   </component>
