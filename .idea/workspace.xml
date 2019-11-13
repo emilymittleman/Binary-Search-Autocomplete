@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eee8e1c0-9258-4427-9648-7544173e7585" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/BinarySearchLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchLibrary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analysis/analysis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BenchMarkForAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BenchMarkForAutocomplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchAutocomplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/BinarySearchLibrary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/P5-Autocomplete/HashListAutocomplete.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/P5-Autocomplete/HashListAutocomplete.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BenchMarkForAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BenchMarkForAutocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BinarySearchAutocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BruteAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BruteAutocomplete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HashListAutocomplete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HashListAutocomplete.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +34,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TVK27fnUZPgkL7TdHYwlAVhayr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -47,9 +59,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AutocompleteMain">
+  <component name="RunManager" selected="Application.BenchMarkForAutocomplete">
     <configuration name="AutocompleteMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AutocompleteMain" />
+      <module name="P5-Autocomplete" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BenchMarkForAutocomplete" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BenchMarkForAutocomplete" />
       <module name="P5-Autocomplete" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -80,22 +99,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTerm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P5-Autocomplete" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTerm" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BenchMarkForAutocomplete" />
         <item itemvalue="Application.AutocompleteMain" />
         <item itemvalue="JUnit.TestBinarySearchAutocomplete" />
         <item itemvalue="Application.BinaryBenchmark" />
         <item itemvalue="JUnit.TestBinarySearchLibrary" />
-        <item itemvalue="JUnit.TestTerm" />
       </list>
     </recent_temporary>
   </component>

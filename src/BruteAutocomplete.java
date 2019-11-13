@@ -30,6 +30,25 @@ public class BruteAutocomplete implements Autocompletor {
 		initialize(terms,weights);
 	}
 
+	/**
+	 * Required by the Autocompletor interface. Returns an array containing the
+	 * k words in myTerms with the largest weight which match the given prefix,
+	 * in descending weight order. If less than k words exist matching the given
+	 * prefix (including if no words exist), then the array instead contains all
+	 * those words. e.g. If terms is {air:3, bat:2, bell:4, boy:1}, then
+	 * topKMatches("b", 2) should return {"bell", "bat"}, but topKMatches("a",
+	 * 2) should return {"air"}
+	 *
+	 * @param prefix
+	 *            - A prefix which all returned words must start with
+	 * @param k
+	 *            - The (maximum) number of words to be returned
+	 * @return An array of the k words with the largest weights among all words
+	 *         starting with prefix, in descending weight order. If less than k
+	 *         such words exist, return an array containing all those words If
+	 *         no such words exist, reutrn an empty array
+	 * @throws NullPointerException if prefix is null
+	 */
 	@Override
 	public List<Term> topMatches(String prefix, int k) {
 		if (k < 0) {
@@ -56,6 +75,16 @@ public class BruteAutocomplete implements Autocompletor {
 		return ret;
 	}
 
+	/**
+	 * Required by the Autocompletor interface. Called by the constructor to
+	 * initialize myTerms to be a sorted array of Terms
+	 *
+	 * @param terms
+	 *            - A list of words to form terms from
+	 * @param weights
+	 *            - A corresponding list of weights, such that terms[i] has
+	 *            weight[i].
+	 */
 	@Override
 	public void initialize(String[] terms, double[] weights) {
 		myTerms = new Term[terms.length];
@@ -73,7 +102,13 @@ public class BruteAutocomplete implements Autocompletor {
 			throw new IllegalArgumentException("Duplicate input terms");
 		}
 	}
-	
+
+	/**
+	 * Required by the Autocompletor interface. Calculates how
+	 * many bytes the array myTerms takes up
+	 *
+	 * @return mySize - the number of bytes in myTerms
+	 */
 	@Override
 	public int sizeInBytes() {
 		if (mySize == 0) {

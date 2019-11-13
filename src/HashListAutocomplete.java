@@ -25,14 +25,23 @@ public class HashListAutocomplete implements Autocompletor {
         initialize(terms,weights);
     }
 
+    /**
+     * Required by the Autocompletor interface. Called by the constructor to
+     * initialize myMap to be a HashMap of (key,value) pairs with the key being
+     * a prefix and the value is a sorted ArrayList of Terms sorted by weight.
+     *
+     * @param terms
+     *            - A list of words to form terms from
+     * @param weights
+     *            - A corresponding list of weights, such that terms[i] has
+     *            weight[i].
+     */
     @Override
     public void initialize(String[] terms, double[] weights) {
         myMap = new HashMap<>();
         for(int i=0; i<terms.length; i++) {
             String term = terms[i];
 
-            //int maxPrefixes = MAX_PREFIX;
-            //if(term.length() < maxPrefixes) { maxPrefixes = term.length(); }
             int maxPrefixes = Math.min(MAX_PREFIX, term.length());
 
             for(int j=0; j<=maxPrefixes; j++) {
@@ -47,6 +56,24 @@ public class HashListAutocomplete implements Autocompletor {
         }
     }
 
+    /**
+     * Required by the Autocompletor interface. Returns an array containing the
+     * k words in myTerms with the largest weight which match the given prefix,
+     * in descending weight order. If less than k words exist matching the given
+     * prefix (including if no words exist), then the array instead contains all
+     * those words. e.g. If terms is {air:3, bat:2, bell:4, boy:1}, then
+     * topKMatches("b", 2) should return {"bell", "bat"}, but topKMatches("a",
+     * 2) should return {"air"}
+     *
+     * @param prefix
+     *            - A prefix which all returned words must start with
+     * @param k
+     *            - The (maximum) number of words to be returned
+     * @return An array of the k words with the largest weights among all words
+     *         starting with prefix, in descending weight order. If less than k
+     *         such words exist, return an array containing all those words If
+     *         no such words exist, reutrn an empty array
+     */
     @Override
     public List<Term> topMatches(String prefix, int k) {
         prefix = prefix.substring(0, Math.min(prefix.length(), MAX_PREFIX));
@@ -57,6 +84,14 @@ public class HashListAutocomplete implements Autocompletor {
         return new ArrayList<>();
     }
 
+    /**
+     * Required by the Autocompletor interface. Calculates how
+     * many bytes are in myMap - this includes all the keys, which
+     * are Strings, and all the values, which are Terms, so each Term
+     * contains a String and a double.
+     *
+     * @return mySize - the number of bytes in myMap
+     */
     @Override
     public int sizeInBytes() {
         if(mySize == 0) {

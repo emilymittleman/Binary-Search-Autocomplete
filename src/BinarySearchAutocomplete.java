@@ -125,6 +125,16 @@ public class BinarySearchAutocomplete implements Autocompletor {
 		return ret;
 	}
 
+	/**
+	 * Required by the Autocompletor interface. Called by the constructor to
+	 * initialize myTerms to be a sorted array of Terms
+	 *
+	 * @param terms
+	 *            - A list of words to form terms from
+	 * @param weights
+	 *            - A corresponding list of weights, such that terms[i] has
+	 * 	 *            weight[i].
+	 */
 	@Override
 	public void initialize(String[] terms, double[] weights) {
 		myTerms = new Term[terms.length];
@@ -135,7 +145,13 @@ public class BinarySearchAutocomplete implements Autocompletor {
 		
 		Arrays.sort(myTerms);
 	}
-	
+
+	/**
+	 * Required by the Autocompletor interface. Calculates how
+	 * many bytes the array myTerms takes up
+	 *
+	 * @return mySize - the number of bytes in myTerms
+	 */
 	@Override
 	public int sizeInBytes() {
 		if (mySize == 0) {
